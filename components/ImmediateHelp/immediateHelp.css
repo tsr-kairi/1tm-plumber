@@ -21,6 +21,10 @@
 .immediate-help {
   background-color: var(--color-pink);
   position: relative;
+  margin-top: 4rem;
+  @media (max-width: 734px) {
+    position: 0;
+  }
 }
 
 .immediate-help-container {
