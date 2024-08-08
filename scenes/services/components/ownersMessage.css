@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+:root {
+  --color-light-gray: #fbfbfb;
+  --color-transparent-dark-gray: #2e2e2e00;
+  --color-pink: #d6186f;
+  --color-dark-gray: #2e2e2e;
+  --color-white: #ffffff;
+  --color-medium-gray: #cfcfcf;
+  --color-dark-pink: #871d46;
+  --color-off-white: #fcfcfc;
+  --color-darker-gray: #3d3d3d;
+  --color-charcoal: #3c3c3c;
+  --color-transparent-black: #00000029;
+  --color-clear: #00000000;
+  --color-dark-charcoal: #222222;
+  --color-gray: #737373;
+
+  /* content width */
+  --content-width: 1200px;
+}
+
+.owners-message {
+  background-color: var(--color-pink);
+  position: relative;
+  margin-top: 4rem;
+
+  .msg-container {
+    padding: 2rem;
+    display: flex;
+    color: var(--color-white);
+    @media (max-width: 968px) {
+      flex-direction: column;
+    }
+    .left-section {
+      width: 40%;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+      @media (max-width: 968px) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .vl {
+      background-color: #fff;
+      height: 250px;
+      width: 2px;
+      margin: auto 0;
+      @media (max-width: 968px) {
+        display: none;
+      }
+    }
+    .hr {
+      display: none;
+      @media (max-width: 968px) {
+        display: none;
+        background-color: #fff;
+        height: 250px;
+        width: 2px;
+        margin: auto 0;
+      }
+    }
+    .right-section {
+      width: 60%;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      gap: 1rem;
+      @media (max-width: 968px) {
+        width: 100%;
+      }
+      @media (max-width: 682px) {
+        flex-direction: column;
+      }
+
+      img {
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+      }
+
+      .profile-info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        .owner {
+          display: flex;
+          flex-direction: column;
+          gap: 0;
+        }
+        h2 {
+          margin-top: 0;
+          @media (max-width: 682px) {
+            text-align: center;
+          }
+        }
+
+        p {
+          margin: 5px 0;
+          @media (max-width: 682px) {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
