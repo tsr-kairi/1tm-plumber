@@ -30,9 +30,23 @@
 .max-width-container {
   max-width: var(--content-width);
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   margin: 0 auto;
+  padding: 0 20px;
+  gap: 2rem;
+}
+
+.heading {
+  color: var(--color-pink);
+  text-align: center;
+  font-size: 2rem;
+}
+.flex-gap {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .footer {
@@ -153,7 +167,7 @@
   }
   .rights {
     background-color: var(--color-dark-gray);
-    padding: 0 20px;
+    padding: 20px;
     .rights-container {
       width: 100%;
       display: flex;

@@ -1,0 +1,69 @@
+/* DO NOT PUT IN GLOBAL */
+:root {
+  --color-light-gray: #fbfbfb;
+  --color-transparent-dark-gray: #2e2e2e00;
+  --color-pink: #d6186f;
+  --color-dark-gray: #2e2e2e;
+  --color-white: #ffffff;
+  --color-medium-gray: #cfcfcf;
+  --color-dark-pink: #871d46;
+  --color-off-white: #fcfcfc;
+  --color-darker-gray: #3d3d3d;
+  --color-charcoal: #3c3c3c;
+  --color-transparent-black: #00000029;
+  --color-clear: #00000000;
+  --color-dark-charcoal: #222222;
+  --color-gray: #737373;
+
+  /* content width */
+  --content-width: 1200px;
+}
+/* DO NOT PUT IN GLOBAL */
+
+.blogs-wrapper {
+  .card-grid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 800px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  .card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 350px;
+      @media (max-width: 400px) {
+        width: 300px;
+      }
+      .card-img {
+        height: 220px;
+        width: 350px;
+        object-fit: cover;
+        @media (max-width: 400px) {
+          width: 300px;
+        }
+      }
+      .card-details {
+        padding: 10px;
+        .date {
+          font-weight: bold;
+        }
+        .card-label {
+          color: var(--color-pink);
+          font: normal normal bold 24px/34px Noto Sans;
+        }
+      }
+    }
+  }
+}
