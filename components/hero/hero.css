@@ -1,0 +1,294 @@
+:root {
+  --color-light-gray: #fbfbfb;
+  --color-transparent-dark-gray: #2e2e2e00;
+  --color-pink: #d6186f;
+  --color-dark-gray: #2e2e2e;
+  --color-white: #ffffff;
+  --color-medium-gray: #cfcfcf;
+  --color-dark-pink: #871d46;
+  --color-off-white: #fcfcfc;
+  --color-darker-gray: #3d3d3d;
+  --color-charcoal: #3c3c3c;
+  --color-transparent-black: #00000029;
+  --color-clear: #00000000;
+  --color-dark-charcoal: #222222;
+  --color-gray: #737373;
+
+  /* for max width: ; */
+  --content-width: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  position: relative;
+  background-image: url("../../assets/home/Mask Group 8.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  @media (max-width: 768px) {
+    height: auto;
+    background-size: auto;
+    background-position: auto;
+    background-size: auto;
+    width: auto;
+  }
+
+  ::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 80vh;
+    background: transparent
+      linear-gradient(180deg, #2e2e2e00 0%, #2e2e2e10 100%) 0% 0% no-repeat
+      padding-box;
+    backdrop-filter: blur(-0.1px);
+    opacity: 1;
+    z-index: -1;
+
+    @media (max-width: 768px) {
+      height: auto;
+    }
+  }
+
+  .content-wrapper {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    z-index: 20;
+    gap: 4rem;
+    padding: 4rem 2rem;
+    color: var(--color-white);
+    margin-bottom: 4rem;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 1rem;
+      margin: 4rem 0;
+      padding: 0;
+    }
+
+    .card {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -20px;
+      z-index: 30;
+      .card-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--color-pink);
+        padding: 2rem 6rem;
+        max-width: var(--content-width);
+        margin: 0 auto;
+        height: auto;
+
+        @media (max-width: 768px) {
+          flex-direction: column;
+          padding: 2.5rem 2rem;
+          align-items: flex-start;
+          font-size: 24px;
+          gap: 1.5rem;
+          max-width: 100%;
+        }
+      }
+      @media (max-width: 768px) {
+        position: static;
+      }
+    }
+  }
+
+  .left-content {
+    flex: 1;
+    margin-right: 4rem;
+
+    @media (max-width: 768px) {
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--color-white);
+    margin-bottom: 1rem;
+    width: 85%;
+    z-index: 20;
+
+    @media (max-width: 768px) {
+      font-size: 1rem;
+      width: 100%;
+      padding: 0 2rem;
+    }
+  }
+
+  .description {
+    font-size: 1.2rem;
+    color: var(--color-light-gray);
+    margin-bottom: 2rem;
+    @media (max-width: 768px) {
+      padding: 0 2rem;
+      font-size: 0.8rem;
+    }
+  }
+
+  .actions {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+    @media (max-width: 768px) {
+      gap: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .button-field {
+    background-color: var(--color-dark-pink);
+    color: var(--color-white);
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: var(--color-pink);
+    }
+
+    @media (max-width: 768px) {
+      background-color: var(--color-dark-gray);
+      font-size: 1.5rem;
+      padding: 1.2rem 2rem;
+    }
+  }
+  .button-outline {
+    background-color: var(--color-white);
+    color: var(--color-dark-pink);
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: var(--color-medium-gray);
+    }
+
+    @media (max-width: 768px) {
+      background-color: var(--color-dark-pink);
+      color: var(--color-white);
+      font-size: 1.5rem;
+      padding: 1.2rem 2rem;
+    }
+  }
+
+  .right-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-dark-pink);
+    border: 3px solid var(--color-white);
+    padding: 2rem;
+    height: auto;
+    width: 364px;
+
+    @media (max-width: 768px) {
+      height: auto;
+      padding: 0 2rem;
+      margin: 0 auto;
+    }
+
+    .contact {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      width: 100%;
+      gap: 1rem;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem 0;
+      }
+    }
+
+    .contact-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: var(--color-white);
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-address {
+      font-size: 16px;
+      color: var(--color-white);
+      margin: 0.5rem 0;
+
+      .location-img {
+        color: var(--color-white);
+        margin-right: 10px;
+      }
+    }
+
+    .contact-link {
+      font-size: 16px;
+      color: var(--color-white);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--color-light-gray);
+      }
+    }
+
+    .contact-phone {
+      font-size: 22px;
+      color: var(--color-white);
+      margin-bottom: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .contact-phone-link {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: var(--color-white);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--color-pink);
+      }
+    }
+
+    .contact-email {
+      font-size: 1rem;
+      color: var(--color-light-gray);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--color-light-gray);
+      }
+    }
+  }
+}

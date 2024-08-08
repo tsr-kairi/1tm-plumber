@@ -45,8 +45,8 @@ header {
       justify-content: space-between;
 
       .logo img {
-        height: 89px;
-        width: 142px;
+        height: 69px;
+        width: 122px;
       }
 
       .cta-nav {
@@ -59,9 +59,8 @@ header {
         .location {
           display: flex;
           align-items: center;
-          font-size: 14px;
+          font-size: 12px;
           color: var(--color-pink);
-          margin-right: 40px;
 
           i {
             margin-right: 5px;
@@ -70,6 +69,7 @@ header {
           a {
             text-decoration: none;
             margin-left: 5px;
+            font-size: 12px;
           }
 
           .location-text {
@@ -77,7 +77,7 @@ header {
           }
           .change-location {
             color: var(--color-pink);
-            margin-right: 30px;
+            margin-right: 15px;
           }
 
           .cta {
@@ -92,21 +92,21 @@ header {
                 background: var(--color-dark-charcoal);
                 color: var(--color-white);
                 text-decoration: none;
-                padding: 10px 20px;
+                padding: 7.5px 15px;
                 display: flex;
                 align-items: center;
               }
               .phone-number {
                 background: var(--color-pink);
                 color: var(--color-white);
-                padding: 10px 20px;
+                padding: 7.5px 15px;
               }
             }
             .schedule-appointment {
               background: var(--color-pink);
               text-decoration: none;
-              padding: 10px 20px;
-              margin-left: 30px;
+              padding: 7.5px 15px;
+              margin-left: 15px;
 
               a {
                 color: var(--color-white);
@@ -122,10 +122,11 @@ header {
             display: flex;
             list-style: none;
             justify-content: center;
+            gap: 20px;
 
             li {
               position: relative;
-              margin: 0 20px;
+              /* margin: 0 20px; */
               display: flex;
               align-items: center;
 
@@ -147,7 +148,7 @@ header {
                 display: none;
                 position: absolute;
                 background-color: var(--color-white);
-                width: 200px;
+                width: max-content;
                 top: 50px;
                 z-index: 1;
                 box-shadow: 0 2px 5px var(--color-transparent-black);
