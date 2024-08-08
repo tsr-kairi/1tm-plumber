@@ -1,0 +1,59 @@
+:root {
+  --color-light-gray: #fbfbfb;
+  --color-transparent-dark-gray: #2e2e2e00;
+  --color-pink: #d6186f;
+  --color-dark-gray: #2e2e2e;
+  --color-white: #ffffff;
+  --color-medium-gray: #cfcfcf;
+  --color-dark-pink: #871d46;
+  --color-off-white: #fcfcfc;
+  --color-darker-gray: #3d3d3d;
+  --color-charcoal: #3c3c3c;
+  --color-transparent-black: #00000029;
+  --color-clear: #00000000;
+  --color-dark-charcoal: #222222;
+  --color-gray: #737373;
+
+  /* content width */
+  --content-width: 1200px;
+}
+
+.faq-container {
+  .title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    .faq-heading {
+      color: var(--color-pink);
+      font-size: 2rem;
+    }
+    button {
+      background-color: var(--color-dark-pink);
+      color: var(--color-white);
+      border: none;
+      padding: 10px;
+    }
+  }
+  .faq-wrapper {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+
+    @media (max-width: 800px) {
+      grid-template-columns: 1fr;
+    }
+
+    .faq {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      h3 {
+        font-size: larger;
+      }
+      p {
+        color: var(--color-gray);
+      }
+    }
+  }
+}
