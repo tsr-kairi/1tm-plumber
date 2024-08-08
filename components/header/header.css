@@ -1,0 +1,304 @@
+:root {
+  --color-light-gray: #fbfbfb;
+  --color-transparent-dark-gray: #2e2e2e00;
+  --color-pink: #d6186f;
+  --color-dark-gray: #2e2e2e;
+  --color-white: #ffffff;
+  --color-medium-gray: #cfcfcf;
+  --color-dark-pink: #871d46;
+  --color-off-white: #fcfcfc;
+  --color-darker-gray: #3d3d3d;
+  --color-charcoal: #3c3c3c;
+  --color-transparent-black: #00000029;
+  --color-clear: #00000000;
+  --color-dark-charcoal: #222222;
+  --color-gray: #737373;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+  background: var(--color-white);
+  padding: 10px 20px;
+  /* deshtop view */
+  .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .inner-container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo img {
+        height: 89px;
+        width: 142px;
+      }
+
+      .cta-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        flex-grow: 1;
+
+        .location {
+          display: flex;
+          align-items: center;
+          font-size: 14px;
+          color: var(--color-pink);
+          margin-right: 40px;
+
+          i {
+            margin-right: 5px;
+          }
+
+          a {
+            text-decoration: none;
+            margin-left: 5px;
+          }
+
+          .location-text {
+            color: var(--color-darker-gray);
+          }
+          .change-location {
+            color: var(--color-pink);
+            margin-right: 30px;
+          }
+
+          .cta {
+            display: flex;
+            align-items: center;
+
+            .call-now-cta {
+              display: flex;
+              align-items: center;
+
+              .call-now {
+                background: var(--color-dark-charcoal);
+                color: var(--color-white);
+                text-decoration: none;
+                padding: 10px 20px;
+                display: flex;
+                align-items: center;
+              }
+              .phone-number {
+                background: var(--color-pink);
+                color: var(--color-white);
+                padding: 10px 20px;
+              }
+            }
+            .schedule-appointment {
+              background: var(--color-pink);
+              text-decoration: none;
+              padding: 10px 20px;
+              margin-left: 30px;
+
+              a {
+                color: var(--color-white);
+              }
+            }
+          }
+        }
+
+        nav {
+          flex-grow: 1;
+
+          .nav-links {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+
+            li {
+              position: relative;
+              margin: 0 20px;
+              display: flex;
+              align-items: center;
+
+              a {
+                text-decoration: none;
+                color: var(--color-dark-gray);
+                font-weight: normal;
+                display: flex;
+                align-items: center;
+                padding: 10px 0;
+
+                i {
+                  margin-left: 10px;
+                  font-size: 12px;
+                }
+              }
+
+              .dropdown {
+                display: none;
+                position: absolute;
+                background-color: var(--color-white);
+                width: 200px;
+                top: 50px;
+                z-index: 1;
+                box-shadow: 0 2px 5px var(--color-transparent-black);
+
+                li {
+                  margin: 0;
+
+                  a {
+                    padding: 10px;
+                  }
+                }
+              }
+            }
+            :hover .dropdown {
+              display: block;
+            }
+          }
+        }
+      }
+
+      .nav-header-buttons {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        /* margin-bottom: 20px; */
+
+        .menu-toggle,
+        .close-button {
+          display: none;
+          font-size: 24px;
+          cursor: pointer;
+        }
+      }
+    }
+    .change-location-main {
+      display: none;
+
+      span i {
+        color: var(--color-pink);
+      }
+    }
+  }
+
+  /* Mobile view */
+  @media (max-width: 768px) {
+    .container {
+      .inner-container {
+        .nav-header-buttons {
+          display: flex;
+
+          .menu-toggle,
+          .close-button {
+            display: block;
+          }
+
+          .close-button {
+            display: none;
+          }
+        }
+        .logo img {
+          height: 40px;
+          width: auto;
+        }
+
+        .cta-nav {
+          display: none;
+          width: 100%;
+          margin-top: 10px;
+
+          .location {
+            display: none;
+
+            .cta {
+              flex-wrap: wrap;
+              justify-content: space-between;
+              margin-top: 10px;
+
+              .call-now-cta,
+              .schedule-appointment {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 10px;
+              }
+            }
+          }
+
+          nav {
+            display: none;
+            width: 100%;
+            left: 0;
+            position: absolute;
+            background-color: var(--color-white);
+            top: 100px;
+            z-index: 1;
+            flex-direction: column;
+
+            .nav-links {
+              flex-direction: column;
+
+              li {
+                margin: 10px 0;
+                align-items: flex-start;
+                padding: 0 20px;
+
+                .dropdown {
+                  position: static;
+                  width: 100%;
+                  box-shadow: none;
+
+                  li:hover {
+                    background-color: var(--color-light-gray);
+                  }
+                }
+              }
+              :hover {
+                background-color: var(--color-light-gray);
+              }
+            }
+
+            ul li {
+              display: flex;
+              width: 100%;
+              flex-direction: column;
+              justify-content: flex-start;
+              align-items: flex-start;
+            }
+          }
+          nav.active {
+            display: block;
+          }
+        }
+        .cta-nav.active {
+          display: block;
+        }
+      }
+      .change-location-main {
+        display: block;
+        width: 100%;
+        left: 0;
+        position: absolute;
+        top: 60px;
+        background-color: var(--color-light-gray);
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--color-medium-gray);
+
+        .change-location-mobile {
+          color: var(--color-pink);
+        }
+      }
+    }
+  }
+}
