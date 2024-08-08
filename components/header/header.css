@@ -122,7 +122,7 @@ header {
             display: flex;
             list-style: none;
             justify-content: center;
-            gap: 20px;
+            gap: 3rem;
 
             li {
               position: relative;
