@@ -1,0 +1,131 @@
+:root {
+  --color-light-gray: #fbfbfb;
+  --color-transparent-dark-gray: #2e2e2e00;
+  --color-pink: #d6186f;
+  --color-dark-gray: #2e2e2e;
+  --color-white: #ffffff;
+  --color-medium-gray: #cfcfcf;
+  --color-dark-pink: #871d46;
+  --color-off-white: #fcfcfc;
+  --color-darker-gray: #3d3d3d;
+  --color-charcoal: #3c3c3c;
+  --color-transparent-black: #00000029;
+  --color-clear: #00000000;
+  --color-dark-charcoal: #222222;
+  --color-gray: #737373;
+
+  /* content width */
+  --content-width: 1200px;
+}
+
+.review-container {
+  display: flex;
+  height: 300px;
+  background-image: url("/assets/testiminials/IMG_1405_websize.png");
+
+  background-size: cover;
+  background-position: center;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-section {
+    flex: 1;
+    padding: 2rem;
+    position: relative;
+    color: var(--color-white);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: var(--color-pink);
+      opacity: 0.6;
+      z-index: 1;
+    }
+
+    .left-content {
+      position: relative;
+      z-index: 2;
+
+      .stars {
+        color: #ffd700;
+        font-size: 24px;
+        margin-bottom: 10px;
+        background-color: var(--color-white);
+        padding: 5px 10px;
+        border-radius: 10px;
+        width: fit-content;
+        @media (max-width: 800px) {
+          margin: 0 auto;
+        }
+      }
+
+      .rating {
+        font-size: 18px;
+        margin-bottom: 10px;
+        font-size: 2rem;
+        font-weight: bold;
+        @media (max-width: 800px) {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .right-section {
+    flex: 1;
+    padding: 2rem;
+    background-color: #333;
+    color: var(--color-white);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    @media (max-width: 800px) {
+      align-items: center;
+    }
+    h2 {
+      margin: 0 0 20px 0;
+    }
+
+    .button {
+      margin: 5px 0;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      text-decoration: none;
+      color: var(--color-white);
+      gap: 10px;
+      padding-right: 15px;
+      .img-container {
+        background-color: var(--color-white);
+        padding: 10px 15px;
+        img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+
+      &.google-button {
+        background-color: var(--color-pink);
+      }
+
+      &.facebook-button {
+        background-color: var(--color-pink);
+      }
+    }
+  }
+}
