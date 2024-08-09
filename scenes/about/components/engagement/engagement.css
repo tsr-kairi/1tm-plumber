@@ -18,14 +18,13 @@
   --content-width: 1200px;
 }
 
-.service-cards {
+.engagement-cards {
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  @media (max-width: 1200px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  margin: 2rem auto 0 auto;
+  max-width: 1000px;
   @media (max-width: 800px) {
     grid-template-columns: repeat(2, 1fr);
     gap: 2.5rem;
@@ -34,7 +33,7 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 3rem;
   }
-  .service-card {
+  .engagement-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
