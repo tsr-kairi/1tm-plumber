@@ -27,8 +27,12 @@ body {
 
 /* Header styles */
 header {
+  position: sticky;
+  top: 0;
   background: var(--color-white);
+  box-shadow: 0 2px 4px var(--color-transparent-black);
   padding: 10px 20px;
+  z-index: 50;
   /* deshtop view */
   .container {
     width: 100%;

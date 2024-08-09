@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Services</title>
+    <title>View Services</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
       rel="stylesheet"
@@ -22,13 +22,12 @@
     <link rel="stylesheet" href="/components/faq/faq.css" />
     <link rel="stylesheet" href="/components/ImmediateHelp/immediateHelp.css" />
     <link rel="stylesheet" href="/components/header/header.css" />
-    <link rel="stylesheet" href="./components/ownersMessage.css" />
-    <link rel="stylesheet" href="/components/services/services.css" />
+    <link rel="stylesheet" href="/components/testimonials/testimonials.css" />
+    <link rel="stylesheet" href="./components/contentTab/contentTab.css" />
     <link
       rel="stylesheet"
-      href="./components/welcomeMessgae/welcomeMessgae.css"
+      href="./components/singleService/singleService.css"
     />
-    <link rel="stylesheet" href="/components/testimonials/testimonials.css" />
     <script src="/components/header/header.js" defer></script>
   </head>
   <body>
@@ -39,7 +38,7 @@
           <div class="logo">
             <a href="/scenes/home/index.html">
               <img
-                src="../../assets/Primary logo & plunger@2x.png"
+                src="/assets/Primary logo & plunger@2x.png"
                 alt="1-Tom-Plumber Logo"
               />
             </a>
@@ -64,30 +63,14 @@
             <nav>
               <ul class="nav-links">
                 <li>
-                  <a href="/scenes/services/services.html"
+                  <a href="#"
                     >Services <i class="fa-solid fa-chevron-down"></i
                   ></a>
                   <ul class="dropdown">
-                    <li>
-                      <a href="/scenes/services/viewServices/index.html"
-                        >Plumbing</a
-                      >
-                    </li>
-                    <li>
-                      <a href="/scenes/services/viewServices/index.html"
-                        >Drain Cleaning</a
-                      >
-                    </li>
-                    <li>
-                      <a href="/scenes/services/viewServices/index.html"
-                        >Water Damage Restoration</a
-                      >
-                    </li>
-                    <li>
-                      <a href="/scenes/services/viewServices/index.html"
-                        >Excavation</a
-                      >
-                    </li>
+                    <li><a href="#">Plumbing</a></li>
+                    <li><a href="#">Drain Cleaning</a></li>
+                    <li><a href="#">Water Damage Restoration</a></li>
+                    <li><a href="#">Excavation</a></li>
                   </ul>
                 </li>
                 <li>
@@ -136,135 +119,124 @@
     </header>
     <!-- Header End -->
 
-    <!-- Services -->
-    <div class="services-container">
-      <h1 class="heading">Our Services</h1>
-      <div class="service-item">
-        <div class="service-content">
-          <h3 class="service-title">Plumbing</h3>
-          <p class="service-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-            scelerisque volutpat nunc, eget congue nibh cursus et. Nullam aliqu
-            am, urna blandit tempus posuere, mauris enim consectetur orci, sed
-            ultrices odio mi a elit. Morbi euismod condimentum mauris, sit amet
-            viverra arcu ultrices non. Prase nt semper lectus id nibh luctus
-            placerat. Fusce ac scelerisque ipsum. Integer lobortis at magna at
-            finibus.
-          </p>
-          <a href="/scenes/services/viewServices/index.html">
-            <button class="service-button">Schedule Now</button>
-          </a>
-        </div>
-        <div class="service-image">
-          <img src="/assets/services/plumbing.png" alt="Plumbing" />
-        </div>
-      </div>
-      <div class="service-item">
-        <div class="service-image">
-          <img src="/assets/services/drain-cleaning.png" alt="Drain Cleaning" />
-        </div>
-        <div class="service-content">
-          <h3 class="service-title">Drain Cleaning</h3>
-          <p class="service-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-            scelerisque volutpat nunc, eget congue nibh cursus et. Nullam aliqu
-            am, urna blandit tempus posuere, mauris enim consectetur orci, sed
-            ultrices odio mi a elit. Morbi euismod condimentum mauris, sit amet
-            viverra arcu ultrices non. Prae sent semper lectus id nibh luctus
-            placerat. Fusce ac scelerisque ipsum. Integer lobortis at magna at
-            finibus.
-          </p>
-          <a href="/scenes/services/viewServices/index.html">
-            <button class="service-button">Schedule Now</button>
-          </a>
+    <!-- View more service section one start -->
+    <section class="plumbing-solutions">
+      <div class="container">
+        <nav class="breadcrumb">
+          <a href="#">Home</a> &gt; <a href="#">Services</a> &gt;
+          <span>Plumbing</span>
+        </nav>
+
+        <h1>Plumbing Solutions in Greater Cincinnati</h1>
+
+        <div class="content-wrapper">
+          <div class="image-container">
+            <img
+              src="/assets/services/viewService/Group 151@2x.png"
+              alt="Plumber standing next to company van"
+            />
+          </div>
+          <div class="content-section">
+            <h2>Content Section</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              scelerisque volutpat nunc, eget congue nibh cursus et. Nullam
+              aliquam, urna blandit tempus posuere, mauris enim consectetur
+              orci, sed ultricies odio mi a elit. Morbi euismod condimentum
+              mauris, sit amet viverra arcu facilisis non. Proin semper lectus
+              id nisi luctus placerat. Fusce ac scelerisque ipsum. Integer
+              lobortis at magna at finibus. Praesent ultrices non ipsum nec
+              consequat. Nulla ultrices in metus sit amet tempus. Praesent nec
+              laoreet nulla. Etiam at accumsan lacus.
+            </p>
+            <p>
+              Phasellus molestie vitae mi et lacinia. Duis ut varius tortor, in
+              ornare mauris. Phasellus porta turpis sed augue consequat, vitae
+              sollicitudin magna pretium. Nam vestibulum iaculis quam, eget
+              tempus tellus. Sed lorem ex, aliquet eu turpis non, convallis
+              interdum nunc. Quisque vulputate urna dolor. Donec aliquam enim et
+              tortor congue, ac commodo sapien mattis.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="service-item">
-        <div class="service-content">
-          <h3 class="service-title">Water Damage Restoration</h3>
-          <p class="service-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-            scelerisque volutpat nunc, eget congue nibh cursus et. Nullam aliqu
-            am, urna blandit tempus posuere, mauris enim consectetur orci, sed
-            ultrices odio mi a elit. Morbi euismod condimentum mauris, sit amet
-            viverra arcu ultrices non. Pra esent semper lectus id nibh luctus
-            placerat. Fusce ac scelerisque ipsum. Integer lobortis at magna at
-            finibus.
-          </p>
-          <a href="/scenes/services/viewServices/index.html">
-            <button class="service-button">Schedule Now</button>
-          </a>
-        </div>
-        <div class="service-image">
+    </section>
+    <!-- View more service section one end -->
+
+    <!-- View more content tab section one start -->
+    <div class="content-tab-container">
+      <aside class="sidebar">
+        <nav>
+          <ul>
+            <li>Burst Pipes</li>
+            <li>Burst</li>
+            <li>Burst Pipes</li>
+            <li class="active">Frozen Pipes</li>
+            <li>Garbage Disposals</li>
+            <li>Sewer Lines</li>
+            <li>Sinks & Faucets</li>
+            <li>Sump Pumps</li>
+            <li>Toilets</li>
+            <li>Water Heaters</li>
+            <li>Water Lines</li>
+          </ul>
+        </nav>
+      </aside>
+      <main class="content">
+        <div>
           <img
-            src="/assets/services/water-damage.png"
-            alt="Water Damage Restoration"
+            src="/assets/services/viewService/contentCover.png"
+            alt="Frozen pipes"
+            class="header-image"
           />
         </div>
-      </div>
-      <div class="service-item">
-        <div class="service-image">
-          <img src="/assets/services/excavation.png" alt="Excavation" />
-        </div>
-        <div class="service-content">
-          <h3 class="service-title">Excavation</h3>
-          <p class="service-description">
+        <section class="main-content">
+          <h1>Frozen Pipes</h1>
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-            scelerisque volutpat nunc, eget congue nibh cursus et. Nullam aliqu
-            am, urna blandit tempus posuere, mauris enim consectetur orci, sed
-            ultrices odio mi a elit. Morbi euismod condimentum mauris, sit amet
-            viverra arcu ultrices non. Prase nt semper lectus id nibh luctus
+            scelerisque volutpat nunc, eget congue nibh cursus et. Nullam
+            aliquam, urna blandit tempus posuere, mauris enim consectetur orci,
+            sed ultricies odio mi a elit. Morbi euismod condimentum mauris, sit
+            amet viverra arcu ultrices non. Proin semper lectus id nisi luctus
             placerat. Fusce ac scelerisque ipsum. Integer lobortis at magna at
-            finibus.
+            finibus. Praesent ultrices non ipsum nec consequat.
           </p>
-          <a href="/scenes/services/viewServices/index.html">
-            <button class="service-button">Schedule Now</button>
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- Services end -->
-
-    <!-- Owners Message start -->
-
-    <div class="owners-message">
-      <div class="max-width-container">
-        <div class="msg-container">
-          <div class="left-section">
-            <h1>1-Tom-Plumber Greater Cincinnati</h1>
+          <p>
+            Phasellus molestie vitae mi et lacinia. Duis ut varius tortor, in
+            ornare mauris. Phasellus porta turpis sed augue consequat, vitae
+            sollicitudin magna pretium. Nam vestibulum iaculis quam, eget tempus
+            tellus. Sed lorem ex, aliquet eu turpis non, convallis interdum
+            nunc. Quisque vulputate urna dolor.
+          </p>
+          <p>
+            Etiam viverra eleifend dolor, sed mollis arcu commodo id. Mauris
+            eget ex orci. Etiam sollicitudin est semper nunc ultrices euismod.
+            Fusce pretium iaculis nisi. Vivamus viverra malesuada mauris, ac
+            finibus sapien rutrum id. Maecenas cursus orci non bibendum porta.
+            Curabitur ac velit sit amet arcu blandit rhoncus. Mauris congue
+            accumsan enim at viverra. Quisque suscipit viverra dolor, imperdiet
+            vulputate eros tincidunt eget.
+          </p>
+          <div class="list-container">
+            <ul>
+              <li>Lorem Ipsum Dolor Sit</li>
+              <li>Lorem Ipsum Dolor Sit</li>
+              <li>Lorem Ipsum Dolor Sit</li>
+            </ul>
+            <ul>
+              <li>Lorem Ipsum Dolor Sit</li>
+              <li>Lorem Ipsum Dolor Sit</li>
+              <li>Lorem Ipsum Dolor Sit</li>
+            </ul>
           </div>
-          <div class="vl"></div>
-          <hr class="hr" />
-          <div class="right-section">
-            <img
-              src="/assets/services/Placement Area [ASSETsmall][SIZEThumbnail][STATEDEFAULT]@2x.png"
-              alt="Profile Image"
-            />
-
-            <div class="profile-info">
-              <div class="owner">
-                <h2>John Smith</h2>
-                <p>OWNER</p>
-              </div>
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                scelerisque volutpat nunc, eget congue nibh cursus et. Nullam
-                aliquam, urna blanditi tempus posuere, mauris etiam consectetur
-                arcu, sed diffricies odio in a sit. Morbi euismod condimentum
-                mauris, sit amet viverra arcu ultrices non.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+        </section>
+      </main>
     </div>
+    <!-- View more content tab section one end -->
 
-    <!-- Owners Message end -->
-
+    <!-- Testimonials Start -->
     <div class="max-width-container">
       <div class="flex-gap">
-        <!-- Testimonials Start -->
         <div class="testimonials">
           <h2 class="heading">Customer Testimonials</h2>
           <div class="card-grid">
@@ -299,16 +271,17 @@
             <button><i class="fa-solid fa-arrow-right"></i></button>
           </div>
         </div>
-        <!-- Testimonials end -->
       </div>
     </div>
+    <!-- Testimonials end -->
+
     <!-- Immediate help start-->
     <div class="immediate-help">
       <div class="max-width-container">
         <div class="immediate-help-container">
           <div class="image-container">
             <img
-              src="/assets/services/Mask Group 30@2x.png"
+              src="/assets/components/immediateHelp/Mask Group 29@2x.png"
               alt="Worker Image"
               class="worker-image"
             />
@@ -326,6 +299,7 @@
       </div>
     </div>
     <!-- Immediate help end-->
+
     <!-- Faq  start -->
     <div class="max-width-container">
       <div class="flex-gap">
