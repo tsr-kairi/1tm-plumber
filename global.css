@@ -40,6 +40,8 @@
   color: var(--color-pink);
   text-align: center;
   font-size: 2rem;
+  max-width: 850px;
+  margin: 0 auto;
 }
 .flex-gap {
   display: flex;
