@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+:root {
+  --color-light-gray: #fbfbfb;
+  --color-transparent-dark-gray: #2e2e2e00;
+  --color-pink: #d6186f;
+  --color-dark-gray: #2e2e2e;
+  --color-white: #ffffff;
+  --color-medium-gray: #cfcfcf;
+  --color-dark-pink: #871d46;
+  --color-off-white: #fcfcfc;
+  --color-darker-gray: #3d3d3d;
+  --color-charcoal: #3c3c3c;
+  --color-transparent-black: #00000029;
+  --color-clear: #00000000;
+  --color-dark-charcoal: #222222;
+  --color-gray: #737373;
+
+  /* content width */
+  --content-width: 1200px;
+}
+
+:root,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.blo-view-container {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 20px;
+
+  .blo-view-header {
+    /* width: 100%; */
+    margin: 2rem 0;
+    padding: 0 6rem;
+  }
+
+  .blo-view-category-date {
+    font-size: 14px;
+    color: var(--color-gray);
+  }
+
+  h1 {
+    color: var(--color-pink);
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .blo-view-main-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .blo-view-content {
+    margin: 30px 0;
+    padding: 0 6rem;
+  }
+
+  .blo-view-content p {
+    margin-bottom: 20px;
+  }
+
+  .blo-view-secondary-image {
+    width: 100%;
+    height: auto;
+    padding: 0 6rem;
+    margin-top: 10px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 10px;
+
+    .blo-view-header {
+      padding: 0 1rem;
+      margin-top: 4rem;
+    }
+
+    .blo-view-secondary-image {
+      padding: 0 1rem;
+    }
+
+    .blo-view-content {
+      padding: 0 1rem;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+  }
+}

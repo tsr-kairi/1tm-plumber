@@ -251,6 +251,7 @@ header {
 
             .nav-links {
               flex-direction: column;
+              gap: 0rem;
 
               li {
                 margin: 10px 0;
