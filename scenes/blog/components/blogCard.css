@@ -30,7 +30,7 @@
 .blo-container {
   max-width: var(--content-width);
   margin: 0 auto;
-  padding: 50px 0 50px 0;
+  padding: 50px 10px 50px 10px;
 
   @media (max-width: 768px) {
     padding: 4rem 20px 20px 20px;

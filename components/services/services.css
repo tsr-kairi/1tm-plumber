@@ -91,17 +91,20 @@
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
-    padding: 5rem 1rem 3rem 1rem;
+    padding: 2rem 1rem 2rem 1rem;
 
     .service-item {
       flex-direction: column !important;
-
+      max-height: fit-content;
       .service-image {
-        height: 200px;
+        flex-basis: auto;
+      }
+      .service-content {
+        flex-basis: auto;
       }
 
       &:nth-child(2n) {
-        flex-direction: column !important;
+        flex-direction: column-reverse !important;
       }
     }
   }

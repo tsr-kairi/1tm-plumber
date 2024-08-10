@@ -27,18 +27,27 @@
   padding: 0 20px;
   margin: 4rem auto 0 auto;
 
-  @media (max-width: 800px) {
+  @media (max-width: 877px) {
     flex-direction: column-reverse;
   }
   .content-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+
     align-items: flex-start;
     .text-content {
       display: flex;
       flex-direction: column;
       gap: 0.9rem;
+      max-height: 500px;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      @media screen and (max-width: 992px) and (min-width: 877px) {
+        height: 390px;
+      }
+      @media (max-width: 877px) {
+        height: auto;
+      }
       h2 {
         color: var(--color-pink);
         font-size: 2rem;
@@ -46,6 +55,15 @@
       p {
         color: var(--color-darker-gray);
         font-size: 0.9rem;
+        font-weight: 600;
+
+        &.show-more {
+          max-height: 500px;
+        }
+
+        .more-text {
+          display: none;
+        }
       }
     }
     button {
@@ -60,7 +78,10 @@
     height: 550px;
     width: auto;
     object-fit: fill;
-    @media (max-width: 800px) {
+    @media screen and (max-width: 992px) and (min-width: 877px) {
+      height: 450px;
+    }
+    @media (max-width: 877px) {
       height: auto;
     }
   }

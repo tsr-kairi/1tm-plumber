@@ -35,16 +35,25 @@
   .sidebar {
     width: 250px;
     background-color: var(--color-pink);
-    padding: 20px;
+    padding: 20px 0;
+
+    &.bg-burst-pipes {
+      background-color: #ffdddd; /* example color for burst pipes */
+    }
+    &.bg-burst {
+      background-color: #d6f7c1; /* example color for burst */
+    }
+    /* Add more classes for other list items as needed */
 
     nav ul {
       list-style-type: none;
 
       li {
-        padding: 10px;
+        padding: 10px 10px 10px 25px;
         color: var(--color-white);
         cursor: pointer;
         margin-bottom: 1rem;
+        font-weight: bold;
 
         &.active {
           background-color: var(--color-dark-pink);
@@ -79,6 +88,7 @@
       line-height: 1.6;
       font-size: 14px;
       padding: 0rem 4rem;
+      font-weight: 600;
     }
 
     .list-container {
@@ -89,17 +99,21 @@
 
       ul {
         list-style-type: none;
-        /* width: 48%; */
 
         li {
           padding: 5px 0;
-          color: var(--color-pink);
-
+          color: var(--color-dark-gray);
+          font-weight: bold;
+          font-size: 1rem;
           &:before {
-            content: "\2022";
+            content: "\26AC";
             color: var(--color-pink);
-            font-weight: bold;
+            font-weight: 900;
             display: inline-block;
+            font-size: 1.7rem;
+            line-height: 1.5rem;
+
+            margin-right: 5px;
             width: 1em;
             margin-left: -1em;
           }
