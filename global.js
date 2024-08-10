@@ -33,3 +33,7 @@ document.querySelector(".pro-next").addEventListener("click", function (e) {
     nextPage.classList.add("pro-active");
   }
 });
+
+function goBack() {
+  window.history.back();
+}
