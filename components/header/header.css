@@ -308,3 +308,15 @@ header {
     }
   }
 }
+
+.location-btn {
+  background: var(--color-pink);
+  color: var(--color-white) !important;
+  height: 35px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 15px;
+}

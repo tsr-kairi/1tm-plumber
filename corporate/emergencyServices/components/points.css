@@ -1,0 +1,114 @@
+:root {
+  --color-light-gray: #fbfbfb;
+  --color-transparent-dark-gray: #2e2e2e00;
+  --color-pink: #d6186f;
+  --color-dark-gray: #2e2e2e;
+  --color-white: #ffffff;
+  --color-medium-gray: #cfcfcf;
+  --color-dark-pink: #871d46;
+  --color-off-white: #fcfcfc;
+  --color-darker-gray: #3d3d3d;
+  --color-charcoal: #3c3c3c;
+  --color-transparent-black: #00000029;
+  --color-clear: #00000000;
+  --color-dark-charcoal: #222222;
+  --color-gray: #737373;
+
+  /* content width */
+  --content-width: 1200px;
+}
+
+.points-wrapper {
+  background-color: var(--color-dark-gray);
+  padding: 4rem 0;
+  color: var(--color-white);
+  @media (max-width: 768px) {
+    padding: 4rem 0px;
+  }
+  .flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+    .left-container {
+      width: 50%;
+      p {
+        text-align: start;
+      }
+      @media (max-width: 768px) {
+        width: 100%;
+        p {
+          text-align: center;
+        }
+      }
+    }
+    .right-container {
+      width: 50%;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+      .list-container {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0rem 5rem;
+        height: 100%;
+
+        @media (max-width: 768px) {
+          width: 100%;
+          padding: 0 0 0 30px;
+          width: 100%;
+        }
+        ul {
+          height: 100%;
+          list-style-type: none;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          justify-content: space-between;
+          @media screen and (max-width: 768px) and (min-width: 576px) {
+            width: 100%;
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(2, 1fr);
+          }
+
+          @media (max-width: 576px) {
+            grid-template-columns: repeat(1, 1fr);
+          }
+          li {
+            padding: 5px 0;
+            font-weight: bold;
+            font-size: 1.7rem;
+            display: flex;
+            align-items: center;
+
+            @media screen and (max-width: 1200px) and (min-width: 992px) {
+              font-size: 1.7rem;
+            }
+            @media screen and (max-width: 992px) and (min-width: 768px) {
+              font-size: 1.5rem;
+            }
+            @media (max-width: 768px) {
+              font-size: 1.3rem;
+            }
+
+            &:before {
+              content: url("/assets/downCircularArrow.svg");
+              color: var(--color-pink);
+              display: inline-block;
+              font-size: 1.7rem;
+              line-height: 1;
+              margin-right: 5px;
+              width: auto;
+              margin-left: -1em;
+            }
+          }
+        }
+      }
+    }
+  }
+}

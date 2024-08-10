@@ -37,3 +37,15 @@ document.querySelector(".pro-next").addEventListener("click", function (e) {
 function goBack() {
   window.history.back();
 }
+
+(function () {
+  var isPageAvailable = checkPageAvailability();
+
+  if (!isPageAvailable) {
+    window.location.href = "/scenes/404/404.html";
+  }
+
+  function checkPageAvailability() {
+    return false;
+  }
+})();
