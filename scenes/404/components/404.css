@@ -1,0 +1,23 @@
+.main-404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 5rem 10px;
+  p {
+    text-align: center;
+  }
+  button {
+    background-color: var(--color-dark-pink);
+    color: var(--color-white);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: var(--color-pink);
+    }
+  }
+}

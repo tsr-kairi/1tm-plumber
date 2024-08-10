@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+:root {
+  --color-light-gray: #fbfbfb;
+  --color-transparent-dark-gray: #2e2e2e00;
+  --color-pink: #d6186f;
+  --color-dark-gray: #2e2e2e;
+  --color-white: #ffffff;
+  --color-medium-gray: #cfcfcf;
+  --color-dark-pink: #871d46;
+  --color-off-white: #fcfcfc;
+  --color-darker-gray: #3d3d3d;
+  --color-charcoal: #3c3c3c;
+  --color-transparent-black: #00000029;
+  --color-clear: #00000000;
+  --color-dark-charcoal: #222222;
+  --color-gray: #737373;
+
+  /* content width */
+  --content-width: 1200px;
+}
+
+:root,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.plumbing-solutions {
+  padding: 2rem 0;
+
+  @media (max-width: 768px) {
+    padding: 3rem 0px 2rem 0px;
+  }
+  .container {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    /* padding: 0 1rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .breadcrumb {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: var(--color-gray);
+
+    @media (max-width: 768px) {
+      padding-top: 2rem;
+    }
+
+    a {
+      color: var(--color-pink);
+      text-decoration: none;
+      font-family: "Noto Sans", sans-serif;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  h1 {
+    color: var(--color-pink);
+    font-size: 2.5rem;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    font-family: "Noto Sans", sans-serif;
+    @media (max-width: 768px) {
+      width: 100%;
+      font-size: 1.5rem;
+    }
+  }
+
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+    gap: 4rem;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      margin-top: 2rem;
+      gap: 2rem;
+    }
+  }
+
+  .image-container {
+    flex: 1;
+    /* width: 40%; */
+
+    img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+  }
+
+  .content-section {
+    flex: 1;
+
+    h2 {
+      color: var(--color-pink);
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      font-family: "Noto Sans", sans-serif;
+      @media (max-width: 768px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    p {
+      color: var(--color-dark-gray);
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      font-family: "Noto Sans", sans-serif;
+      @media (max-width: 768px) {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
