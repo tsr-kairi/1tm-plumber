@@ -21,6 +21,10 @@
 /* DO NOT PUT IN GLOBAL */
 
 .blogs-wrapper {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 5rem 0 5rem 0;
+
   .card-grid {
     margin-top: 2rem;
     display: grid;
@@ -62,6 +66,10 @@
         .card-label {
           color: var(--color-pink);
           font: normal normal bold 24px/34px Noto Sans;
+
+          @media (max-width: 768px) {
+            font-size: 18px;
+          }
         }
       }
     }

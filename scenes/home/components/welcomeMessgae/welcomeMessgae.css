@@ -25,10 +25,13 @@
 
   gap: 1rem;
   padding: 0 20px;
-  margin: 4rem auto 0 auto;
+  margin: 8rem auto 0 auto;
 
   @media (max-width: 877px) {
     flex-direction: column-reverse;
+  }
+  @media (max-width: 768px) {
+    margin: 4rem auto 0 auto;
   }
   .content-wrapper {
     display: flex;
@@ -67,11 +70,16 @@
       }
     }
     button {
+      padding: 0.8rem 2rem;
+      cursor: pointer;
       margin-top: 1rem;
-      padding: 0.7rem;
       background-color: var(--color-dark-pink);
       border: none;
       color: var(--color-white);
+      transition: background-color 0.3s ease;
+      &:hover {
+        background-color: var(--color-pink);
+      }
     }
   }
   img {
