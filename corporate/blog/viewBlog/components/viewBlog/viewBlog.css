@@ -41,6 +41,7 @@
   .blo-view-category-date {
     font-size: 14px;
     color: var(--color-gray);
+    font-weight: bold;
   }
 
   h1 {

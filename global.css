@@ -43,6 +43,14 @@
   max-width: 850px;
   margin: 0 auto;
 }
+
+.heading-desc {
+  max-width: 850px;
+  margin: 20px auto 40px auto;
+  font-weight: bold;
+  text-align: center;
+}
+
 .flex-gap {
   display: flex;
   flex-direction: column;

@@ -1,0 +1,81 @@
+:root {
+  --color-light-gray: #fbfbfb;
+  --color-transparent-dark-gray: #2e2e2e00;
+  --color-pink: #d6186f;
+  --color-dark-gray: #2e2e2e;
+  --color-white: #ffffff;
+  --color-medium-gray: #cfcfcf;
+  --color-dark-pink: #871d46;
+  --color-off-white: #fcfcfc;
+  --color-darker-gray: #3d3d3d;
+  --color-charcoal: #3c3c3c;
+  --color-transparent-black: #00000029;
+  --color-clear: #00000000;
+  --color-dark-charcoal: #222222;
+  --color-gray: #737373;
+
+  /* content width */
+  --content-width: 1200px;
+}
+
+.resources-wrapper {
+  padding: 4rem 0;
+  background-color: var(--color-dark-gray);
+
+  .resources-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+
+    @media screen and (max-width: 1200px) and (min-width: 992px) {
+      gap: 1.5rem;
+    }
+    @media screen and (max-width: 992px) and (min-width: 650px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 650px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .resource-card {
+      h3 {
+        color: var(--color-pink);
+        font-size: 1.3rem;
+        padding: 5px;
+        margin-bottom: 1rem;
+      }
+
+      h3::before {
+        content: "";
+        display: inline-block;
+        background-image: url("/assets/downCircularArrow.svg");
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+        vertical-align: middle;
+      }
+      div {
+        p {
+          color: var(--color-white);
+          font-size: 0.95rem;
+        }
+        button {
+          margin-top: 10px;
+          color: var(--color-pink);
+          font-size: 0.95rem;
+          background-color: transparent;
+          border: none;
+        }
+        button::after {
+          content: "\2295";
+          font-size: 0.95rem;
+          color: var(--color-pink);
+          margin-left: 8px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
