@@ -104,6 +104,36 @@
             text-decoration: none;
           }
         }
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 0;
+          label {
+            font-weight: bold;
+            margin: 20px 0 10px 0;
+          }
+          .input-wrapper {
+            display: flex;
+            gap: 0;
+            input {
+              width: 300px;
+              padding: 0.5rem 1rem;
+              border-radius: 0;
+              border: 3px solid var(--color-dark-pink);
+            }
+
+            button {
+              background-color: var(--color-dark-pink);
+              color: var(--color-white);
+              border: none;
+              padding: 0.5rem 1rem;
+              font-size: 1.2rem;
+              line-height: normal;
+              font-weight: 900;
+              cursor: pointer;
+            }
+          }
+        }
       }
     }
   }

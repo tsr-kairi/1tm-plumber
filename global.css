@@ -55,6 +55,12 @@ body {
   }
 }
 
+.heading-desc {
+  max-width: 850px;
+  margin: 20px auto 40px auto;
+  font-weight: bold;
+  text-align: center;
+}
 .divider {
   margin: 1rem auto;
   width: 100%;

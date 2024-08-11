@@ -50,11 +50,56 @@
         }
         p {
           font-size: 0.95rem;
+          font-weight: 600;
           @media (max-width: 1200px) {
             font-size: 0.8rem;
           }
           @media (max-width: 1000px) {
             font-size: 0.7rem;
+          }
+        }
+        .list-container {
+          display: flex;
+          justify-content: flex-start;
+          padding: 0rem 2rem;
+          gap: 4rem;
+
+          ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem 5rem;
+            @media (max-width: 768px) {
+              width: 100%;
+              margin-bottom: 15px;
+            }
+
+            li {
+              padding: 5px 0;
+              color: var(--color-dark-gray);
+              font-weight: bold;
+              font-size: 1rem;
+              &:before {
+                content: "\26AC";
+                color: var(--color-pink);
+                font-weight: 900;
+                display: inline-block;
+                font-size: 1.7rem;
+                line-height: 1.5rem;
+
+                margin-right: 5px;
+                width: 1em;
+                margin-left: -1em;
+              }
+              @media (max-width: 768px) {
+                text-align: center;
+              }
+            }
+          }
+          @media (max-width: 768px) {
+            flex-direction: column;
+            padding: 0rem 2rem;
+            gap: 0;
           }
         }
       }

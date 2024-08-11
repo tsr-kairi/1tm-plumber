@@ -53,7 +53,7 @@
 
   .blo-tabs {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     margin-bottom: 30px;
     gap: 10px;
     width: 100%;
@@ -63,8 +63,8 @@
   }
 
   .blo-tab {
-    background-color: var(--color-medium-gray);
-    color: var(--color-dark-gray);
+    background: #871d462f 0% 0% no-repeat padding-box;
+    font-weight: bold;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
