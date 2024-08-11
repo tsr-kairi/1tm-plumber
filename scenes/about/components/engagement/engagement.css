@@ -18,53 +18,67 @@
   --content-width: 1200px;
 }
 
-.engagement-cards {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin: 2rem auto 0 auto;
-  max-width: 1000px;
-  @media (max-width: 800px) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2.5rem;
+.engagement {
+  background-color: var(--color-white);
+  padding: 4rem 0;
+
+  @media (max-width: 768px) {
+    padding: 2rem 0;
   }
-  @media (max-width: 500px) {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 3rem;
-  }
-  .engagement-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    .icon {
-      border: 2px solid var(--color-pink);
-      background-color: var(--color-charcoal);
-      color: var(--color-white);
-      font-size: larger;
-      border-radius: 9999px;
-      height: 50px;
-      width: 50px;
+  .engagement-cards {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem auto 0 auto;
+    max-width: 1000px;
+    @media (max-width: 800px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.5rem;
+    }
+    @media (max-width: 500px) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 3rem;
+    }
+    .engagement-card {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-    }
+      gap: 0.5rem;
+      .icon {
+        border: 2px solid var(--color-pink);
+        background-color: var(--color-charcoal);
+        color: var(--color-white);
+        font-size: larger;
+        border-radius: 9999px;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-    h3 {
-      text-align: center;
-    }
-    p {
-      text-align: center;
-      font-size: small;
-    }
-    button {
-      padding: 1rem;
-      background-color: var(--color-pink);
+      h3 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+        font-size: small;
 
-      border: none;
-      color: var(--color-white);
+        @media (max-width: 768px) {
+          width: 80%;
+        }
+      }
+      button {
+        padding: 1rem;
+        background-color: var(--color-pink);
+
+        border: none;
+        color: var(--color-white);
+      }
     }
   }
 }

@@ -1,7 +1,7 @@
 .footer {
   .main {
     background-color: var(--color-dark-pink);
-    padding: 50px 20px;
+    padding: 50px 0px;
     color: var(--color-white);
     .footer-links-address {
       width: 100%;

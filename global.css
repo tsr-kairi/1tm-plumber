@@ -27,6 +27,13 @@
   font-family: "Noto Sans", sans-serif;
 }
 
+body {
+  background-color: var(--color-light-gray);
+  /* color: var(--color-dark-gray); */
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
 .max-width-container {
   max-width: var(--content-width);
   display: flex;
@@ -42,6 +49,10 @@
   font-size: 2rem;
   max-width: 850px;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
 }
 
 .heading-desc {
@@ -49,6 +60,13 @@
   margin: 20px auto 40px auto;
   font-weight: bold;
   text-align: center;
+}
+.divider {
+  margin: 1rem auto;
+  width: 100%;
+  max-width: 80px;
+  height: 2px;
+  background: #cfcfcf 0% 0% no-repeat padding-box;
 }
 
 .flex-gap {
@@ -62,7 +80,7 @@
 .footer {
   .main {
     background-color: var(--color-dark-pink);
-    padding: 50px 20px;
+    padding: 50px 0px;
     color: var(--color-white);
     .footer-links-address {
       width: 100%;

@@ -34,7 +34,7 @@
     padding: 3rem 0px 2rem 0px;
   }
   .container {
-    max-width: var(--content-width);
+    max-width: 1300px;
     margin: 0 auto;
     /* padding: 0 1rem; */
     display: flex;

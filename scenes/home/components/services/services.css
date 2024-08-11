@@ -18,54 +18,70 @@
   --content-width: 1200px;
 }
 
-.service-cards {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  @media (max-width: 1200px) {
-    grid-template-columns: repeat(3, 1fr);
+.services {
+  background-color: var(--color-white);
+  padding: 4rem 0;
+
+  @media (max-width: 768px) {
+    padding: 2rem 0;
   }
-  @media (max-width: 800px) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2.5rem;
-  }
-  @media (max-width: 500px) {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 3rem;
-  }
-  .service-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    .icon {
-      border: 2px solid var(--color-pink);
-      background-color: var(--color-charcoal);
-      color: var(--color-white);
-      font-size: larger;
-      border-radius: 9999px;
-      height: 50px;
-      width: 50px;
+
+  .service-cards {
+    margin-top: 2rem;
+    max-width: var(--content-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 800px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.5rem;
+    }
+    @media (max-width: 500px) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 3rem;
+    }
+    .service-card {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-    }
+      gap: 0.5rem;
+      .icon {
+        border: 2px solid var(--color-pink);
+        background-color: var(--color-charcoal);
+        color: var(--color-white);
+        font-size: larger;
+        border-radius: 9999px;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-    h3 {
-      text-align: center;
-    }
-    p {
-      text-align: center;
-      font-size: small;
-    }
-    button {
-      padding: 1rem;
-      background-color: var(--color-pink);
-
-      border: none;
-      color: var(--color-white);
+      h3 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+        font-size: small;
+      }
+      button {
+        padding: 0.8rem 2rem;
+        cursor: pointer;
+        margin-top: 1rem;
+        background-color: var(--color-dark-pink);
+        border: none;
+        color: var(--color-white);
+        transition: background-color 0.3s ease;
+        &:hover {
+          background-color: var(--color-pink);
+        }
+      }
     }
   }
 }

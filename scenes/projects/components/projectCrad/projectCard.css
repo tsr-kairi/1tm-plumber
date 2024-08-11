@@ -28,7 +28,7 @@
 }
 
 .pro-container {
-  max-width: var(--content-width);
+  max-width: 1300px;
   margin: 0 auto;
   padding: 20px;
 
@@ -37,7 +37,6 @@
   }
 
   .pro-service-item {
-    background-color: var(--color-white);
     display: flex;
     flex-direction: column;
     align-items: center;
