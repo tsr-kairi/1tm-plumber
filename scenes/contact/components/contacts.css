@@ -25,6 +25,7 @@
   @media (max-width: 877px) {
     flex-direction: column-reverse;
   }
+
   .left-wrapper {
     display: flex;
     justify-content: start;

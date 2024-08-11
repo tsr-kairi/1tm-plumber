@@ -33,7 +33,7 @@
   padding: 50px 10px 50px 10px;
 
   @media (max-width: 768px) {
-    padding: 4rem 20px 20px 20px;
+    padding: 5rem 20px 20px 20px;
   }
 
   h1 {
@@ -46,7 +46,7 @@
     margin-bottom: 3rem;
     @media (max-width: 768px) {
       width: 100%;
-      font-size: 1.5rem;
+      font-size: 32px;
       margin-bottom: 1.5rem;
     }
   }
