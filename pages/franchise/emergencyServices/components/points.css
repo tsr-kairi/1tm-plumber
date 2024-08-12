@@ -17,7 +17,6 @@
   /* content width */
   --content-width: 1200px;
 }
-
 .points-wrapper {
   background-color: var(--color-dark-gray);
   padding: 4rem 0;
@@ -38,6 +37,7 @@
       width: 50%;
       p {
         text-align: start;
+        font: normal normal medium 16px/26px;
       }
       @media (max-width: 768px) {
         width: 100%;
@@ -82,12 +82,12 @@
           li {
             padding: 5px 0;
             font-weight: bold;
-            font-size: 1.7rem;
+
             display: flex;
             align-items: center;
-
+            font-size: 32px;
             @media screen and (max-width: 1200px) and (min-width: 992px) {
-              font-size: 1.7rem;
+              font-size: 32px;
             }
             @media screen and (max-width: 992px) and (min-width: 768px) {
               font-size: 1.5rem;
