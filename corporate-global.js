@@ -42,7 +42,7 @@ function goBack() {
   var isPageAvailable = checkPageAvailability();
 
   if (!isPageAvailable) {
-    window.location.href = "/scenes/404/404.html";
+    window.location.href = "/pages/corporate/404/404.html";
   }
 
   function checkPageAvailability() {

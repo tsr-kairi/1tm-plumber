@@ -1764,7 +1764,7 @@ header {
         margin-bottom: 1rem;
         font-weight: bold;
 
-        &.active {
+        &.active-element {
           background-color: var(--color-dark-pink);
         }
 
@@ -2809,7 +2809,7 @@ header {
   .dropdown {
     position: relative;
     display: inline-block;
-
+    width: fit-content;
     .dropdown-content {
       display: none;
       position: absolute;
@@ -3154,4 +3154,5 @@ header {
     }
   }
 }
+
 /* --------------------------------------404  end---------------------------------------------------------------- */

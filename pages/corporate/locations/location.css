@@ -18,6 +18,8 @@
   --content-width: 1200px;
 }
 
+/* Map and stores list */
+
 .contact-wrapper {
   display: flex;
   gap: 1rem;
@@ -40,34 +42,6 @@
       width: 100%;
       @media (max-width: 877px) {
         width: 100%;
-      }
-      .street {
-        font-weight: bold;
-        color: var(--color-pink);
-        @media (max-width: 877px) {
-          text-align: center;
-        }
-      }
-      .city {
-        font-size: 1.8rem;
-        font-weight: bold;
-        color: var(--color-pink);
-        @media (max-width: 877px) {
-          text-align: center;
-        }
-      }
-      .full-address {
-        @media (max-width: 877px) {
-          text-align: center;
-        }
-      }
-      .call-now {
-        font-size: large;
-        font-weight: bold;
-        color: var(--color-dark-pink);
-        @media (max-width: 877px) {
-          text-align: center;
-        }
       }
 
       .cta {
@@ -114,7 +88,12 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-
+        .seperator {
+          width: 100%;
+          height: 2px;
+          background-color: var(--color-medium-gray);
+          margin: 10px 0;
+        }
         .store-location-nearby {
           color: var(--color-darker-gray);
         }
@@ -122,11 +101,41 @@
           display: flex;
           justify-content: space-between;
           .store-name-address {
+            h3 {
+              font-size: 1.5rem;
+            }
+            p {
+              font-size: 1rem;
+              position: relative;
+            }
+
+            p::before {
+              content: "";
+              display: inline-block;
+              background-image: url("/assets/_corporate/Path 2.svg");
+              background-size: 16px 16px;
+              background-repeat: no-repeat;
+              width: 16px;
+              height: 16px;
+              margin-right: 8px;
+              vertical-align: middle;
+            }
           }
           .store-number-website {
+            color: var(--color-pink);
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: flex-end;
+            p {
+              font-size: 1.2rem;
+              font-weight: bold;
+            }
             .view-website-link {
               width: 100%;
               margin: 0 0 0 auto;
+              text-align: end;
+              color: var(--color-pink);
             }
           }
         }
@@ -161,3 +170,137 @@
     }
   }
 }
+/* Map and stores list */
+
+/* stores card */
+
+.location-cards {
+  .top-margin {
+    margin-top: 5rem;
+  }
+  .dropbtn {
+    background-color: #8e2947;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    min-width: 160px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+
+    &::after {
+      content: " ▼";
+      font-size: 12px;
+      margin-top: 3px;
+    }
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+
+      a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+
+        &:hover {
+          background-color: #f1f1f1;
+        }
+      }
+    }
+
+    &:hover {
+      .dropdown-content {
+        display: block;
+      }
+
+      .dropbtn {
+        background-color: #721e38;
+      }
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 4rem;
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+
+    .location-card {
+      padding: 2rem;
+      border: 2px solid var(--color-dark-pink);
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: flex-start;
+      justify-content: flex-start;
+      .img-wrapper {
+        width: 95px;
+        height: 95px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-pink);
+        border-radius: 9999px;
+        img {
+          height: 90px;
+          width: 90px;
+          object-fit: cover;
+          border-radius: 9999px;
+        }
+      }
+      h3 {
+        font: normal normal 600 32px/42px Noto Sans;
+      }
+      .location {
+        font: normal normal 600 18px/30px Noto Sans;
+        position: relative;
+        padding-left: 2px;
+      }
+      .location::before {
+        content: "";
+        display: inline-block;
+        background-image: url("/assets/_corporate/Path 2.svg");
+        background-size: 16px 16px;
+        background-repeat: no-repeat;
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+        vertical-align: middle;
+        position: absolute;
+        left: -18px;
+        top: 6px;
+      }
+      .contact {
+        h4 {
+          font: normal normal bold 28px/30px Noto Sans;
+          color: var(pink);
+        }
+        p {
+          font: normal normal 600 16px/30px Noto Sans;
+        }
+      }
+      .href-btn {
+        padding: 0.57em 1.5rem;
+        color: var(--color-white);
+        background-color: var(--color-dark-pink);
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+/* stores card */
