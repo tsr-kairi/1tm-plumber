@@ -47,7 +47,9 @@
       background: transparent
         linear-gradient(180deg, #2e2e2e00 0%, #2e2e2e 100%) 0% 0% no-repeat
         padding-box;
-
+      @media (max-width: 768px) {
+        height: 60vh;
+      }
       .content-wrapper {
         max-width: var(--content-width);
         margin: 0 auto;
