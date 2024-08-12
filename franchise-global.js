@@ -97,9 +97,9 @@ closeButton.addEventListener("click", () => {
 
 /* header js */
 
-/* ________________________________________Single Servce JS___________________________________________ */
+/* ________________________________________Single Service JS___________________________________________ */
 
-document.addEventListener("DOMContentLoaded", function () {
+/* document.addEventListener("DOMContentLoaded", function () {
   const sidebar = document.querySelector(".sidebar");
   const listItems = document.querySelectorAll(".sidebar nav ul li");
   const contentTitle = document.querySelector(".main-content h1");
@@ -152,9 +152,9 @@ document.addEventListener("DOMContentLoaded", function () {
   listItems.forEach((item) => {
     item.addEventListener("click", function () {
       // Remove active class from all items
-      listItems.forEach((li) => li.classList.remove("active"));
+      listItems.forEach((li) => li.classList.remove("active-element"));
       // Add active class to the clicked item
-      this.classList.add("active");
+      this.classList.add("active-element");
 
       // Get the data-tab attribute to identify the clicked tab
       const tab = this.getAttribute("data-tab");
@@ -173,8 +173,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
-});
-
+}); */
 /* ________________________________________Single Servce JS___________________________________________ */
 /* ________________________________________Projects JS___________________________________________ */
 document.querySelectorAll(".pro-pagination a.pro-page").forEach((item) => {
