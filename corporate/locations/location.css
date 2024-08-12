@@ -1,0 +1,163 @@
+:root {
+  --color-light-gray: #fbfbfb;
+  --color-transparent-dark-gray: #2e2e2e00;
+  --color-pink: #d6186f;
+  --color-dark-gray: #2e2e2e;
+  --color-white: #ffffff;
+  --color-medium-gray: #cfcfcf;
+  --color-dark-pink: #871d46;
+  --color-off-white: #fcfcfc;
+  --color-darker-gray: #3d3d3d;
+  --color-charcoal: #3c3c3c;
+  --color-transparent-black: #00000029;
+  --color-clear: #00000000;
+  --color-dark-charcoal: #222222;
+  --color-gray: #737373;
+
+  /* content width */
+  --content-width: 1200px;
+}
+
+.contact-wrapper {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  @media (max-width: 877px) {
+    flex-direction: column-reverse;
+  }
+  .left-wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    @media (max-width: 877px) {
+      width: 100%;
+    }
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+      @media (max-width: 877px) {
+        width: 100%;
+      }
+      .street {
+        font-weight: bold;
+        color: var(--color-pink);
+        @media (max-width: 877px) {
+          text-align: center;
+        }
+      }
+      .city {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: var(--color-pink);
+        @media (max-width: 877px) {
+          text-align: center;
+        }
+      }
+      .full-address {
+        @media (max-width: 877px) {
+          text-align: center;
+        }
+      }
+      .call-now {
+        font-size: large;
+        font-weight: bold;
+        color: var(--color-dark-pink);
+        @media (max-width: 877px) {
+          text-align: center;
+        }
+      }
+
+      .cta {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        @media (max-width: 877px) {
+          align-items: center;
+        }
+
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 0;
+          label {
+            font-weight: bold;
+            margin: 20px 0 10px 0;
+          }
+          .input-wrapper {
+            display: flex;
+            gap: 0;
+            input {
+              width: 300px;
+              padding: 0.5rem 1rem;
+              border-radius: 0;
+              border: 3px solid var(--color-dark-pink);
+            }
+
+            button {
+              background-color: var(--color-dark-pink);
+              color: var(--color-white);
+              border: none;
+              padding: 0.5rem 1rem;
+              font-size: 1.2rem;
+              line-height: normal;
+              font-weight: 900;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      .stores-location-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .store-location-nearby {
+          color: var(--color-darker-gray);
+        }
+        .store-locations {
+          display: flex;
+          justify-content: space-between;
+          .store-name-address {
+          }
+          .store-number-website {
+            .view-website-link {
+              width: 100%;
+              margin: 0 0 0 auto;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .img-container {
+    position: relative;
+    .map {
+      height: 400px;
+      width: 550px;
+      object-fit: cover;
+      @media screen and (max-width: 1100px) and (min-width: 992px) {
+        width: 500px;
+      }
+      @media screen and (max-width: 992px) and (min-width: 877px) {
+        width: 450px;
+      }
+      @media (max-width: 877px) {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .tag {
+      height: 40px;
+      width: auto;
+      object-fit: cover;
+      position: absolute;
+      bottom: 50%;
+      left: 50%;
+    }
+  }
+}
